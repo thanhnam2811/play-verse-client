@@ -1,9 +1,9 @@
 'use client';
 
-import { Input } from '@/components/ui/input';
-import { Menu, SearchIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { useSidebar } from '@/components/ui/sidebar';
+import { Menu, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Header() {

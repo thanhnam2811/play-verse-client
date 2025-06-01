@@ -1,4 +1,4 @@
-import { Gamepad, X, Facebook, Instagram, Youtube } from 'lucide-react';
+import { FacebookIcon, GamepadIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from 'lucide-react';
 
 export default function Footer() {
 	return (
@@ -8,7 +8,7 @@ export default function Footer() {
 					{/* Logo and Description */}
 					<div className="col-span-1 md:col-span-2">
 						<div className="flex items-center space-x-2 mb-4">
-							<Gamepad className="h-8 w-8 text-purple-400" />
+							<GamepadIcon className="h-8 w-8 text-purple-400" />
 							<span className="text-2xl font-bold">PlayVerse</span>
 						</div>
 						<p className="text-gray-400 mb-6 max-w-md">
@@ -17,16 +17,16 @@ export default function Footer() {
 						</p>
 						<div className="flex space-x-4">
 							<a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-								<X className="h-6 w-6" />
+								<TwitterIcon className="h-6 w-6" />
 							</a>
 							<a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-								<Facebook className="h-6 w-6" />
+								<FacebookIcon className="h-6 w-6" />
 							</a>
 							<a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-								<Instagram className="h-6 w-6" />
+								<InstagramIcon className="h-6 w-6" />
 							</a>
 							<a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-								<Youtube className="h-6 w-6" />
+								<YoutubeIcon className="h-6 w-6" />
 							</a>
 						</div>
 					</div>

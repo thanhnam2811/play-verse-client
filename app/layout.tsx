@@ -1,11 +1,11 @@
-import AppSidebar from '@/components/AppSidebar';
+import AppSidebar from '@/components/layout/AppSidebar';
+import Footer from '@/components/layout/Footer';
+import Header from '@/components/layout/Header';
 import { SidebarProvider } from '@/components/ui/sidebar';
+import { ICategory } from '@/types';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import './globals.css';
-import { ICategory } from '@/types';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
