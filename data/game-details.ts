@@ -2,7 +2,7 @@ import { IGameDetail } from '@/types';
 
 export const gameDetails: IGameDetail[] = [
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b936',
 		name: 'Puzzle Quest',
 		slug: 'puzzle-quest',
 		category: 'Puzzle',
@@ -20,7 +20,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Single-player', 'Timed challenges', 'Leaderboards'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b937',
 		name: 'Speed Runner',
 		slug: 'speed-runner',
 		category: 'Action',
@@ -38,7 +38,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Multiplayer', 'Speed challenges', 'Achievements'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b938',
 		name: 'Word Wizard',
 		slug: 'word-wizard',
 		category: 'Word',
@@ -56,7 +56,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Single-player', 'Daily challenges', 'Word puzzles'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b939',
 		name: 'Strategy Saga',
 		slug: 'strategy-saga',
 		category: 'Strategy',
@@ -74,7 +74,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Multiplayer', 'Real-time strategy', 'Custom maps'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b940',
 		name: 'Memory Master',
 		slug: 'memory-master',
 		category: 'Brain',
@@ -92,7 +92,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Single-player', 'Memory challenges', 'Progress tracking'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b941',
 		name: 'Reflex Arena',
 		slug: 'reflex-arena',
 		category: 'Arcade',
@@ -110,7 +110,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Multiplayer', 'Fast-paced gameplay', 'Leaderboards'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b941',
 		name: 'Card Master',
 		slug: 'card-master',
 		category: 'Card',
@@ -128,7 +128,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Multiplayer', 'Deck building', 'Tournaments'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b941',
 		name: 'Trivia Champion',
 		slug: 'trivia-champion',
 		category: 'Trivia',
@@ -146,7 +146,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Single-player', 'Multiplayer', 'Daily quizzes'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b942',
 		name: 'Math Ninja',
 		slug: 'math-ninja',
 		category: 'Educational',
@@ -164,7 +164,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Single-player', 'Math challenges', 'Progress tracking'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b943',
 		name: 'Color Match',
 		slug: 'color-match',
 		category: 'Casual',
@@ -182,7 +182,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Single-player', 'Color challenges', 'Relaxing gameplay'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b944',
 		name: 'Physics Lab',
 		slug: 'physics-lab',
 		category: 'Simulation',
@@ -200,7 +200,7 @@ export const gameDetails: IGameDetail[] = [
 		features: ['Single-player', 'Physics experiments', 'Sandbox mode'],
 	},
 	{
-		id: crypto.randomUUID(),
+		id: 'eb1ff058-2a8b-445c-aa5a-6df73fe4b945',
 		name: 'Rhythm Beats',
 		slug: 'rhythm-beats',
 		category: 'Music',

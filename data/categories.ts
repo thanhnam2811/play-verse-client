@@ -2,7 +2,7 @@ import { ICategory } from '@/types';
 
 export const categories: ICategory[] = [
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b065',
 		name: 'Puzzle',
 		slug: 'puzzle',
 		icon: '🧩',
@@ -12,7 +12,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b066',
 		name: 'Action',
 		slug: 'action',
 		icon: '⚔️',
@@ -22,7 +22,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b067',
 		name: 'Word',
 		slug: 'word',
 		icon: '📚',
@@ -32,7 +32,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b068',
 		name: 'Strategy',
 		slug: 'strategy',
 		icon: '♟️',
@@ -42,7 +42,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b069',
 		name: 'Brain',
 		slug: 'brain',
 		icon: '🧠',
@@ -52,7 +52,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b070',
 		name: 'Arcade',
 		slug: 'arcade',
 		icon: '🎮',
@@ -62,7 +62,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b071',
 		name: 'Adventure',
 		slug: 'adventure',
 		icon: '🌍',
@@ -72,7 +72,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b072',
 		name: 'Simulation',
 		slug: 'simulation',
 		icon: '🛠️',
@@ -82,7 +82,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b073',
 		name: 'Card',
 		slug: 'card',
 		icon: '🃏',
@@ -92,7 +92,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b074',
 		name: 'Sports',
 		slug: 'sports',
 		icon: '⚽',
@@ -102,7 +102,7 @@ export const categories: ICategory[] = [
 		updatedAt: '2024-06-01',
 	},
 	{
-		id: crypto.randomUUID(),
+		id: '8e03de6e-ae4b-40a1-8bb9-8d530f65b075',
 		name: 'Music',
 		slug: 'music',
 		icon: '🎵',
