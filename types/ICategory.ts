@@ -1,7 +1,11 @@
-export interface ICategory {
-	code: string;
-	icon: string;
-	title: string;
+import { IData } from './IData';
+
+export interface ICategory extends IData {
+	name: string;
+	slug: string;
 	description: string;
-	gameCount: number;
+
+	icon: string;
+
+	games: number;
 }

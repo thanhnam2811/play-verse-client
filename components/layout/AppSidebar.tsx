@@ -16,14 +16,32 @@ import {
 	SidebarRail,
 } from '@/components/ui/sidebar';
 import { ICategory } from '@/types';
-import { GamepadIcon, TrophyIcon } from 'lucide-react';
+import { GamepadIcon, StarIcon, TrophyIcon, UsersIcon } from 'lucide-react';
 import Link from 'next/link';
 
-interface AppSidebarProps extends React.ComponentProps<typeof Sidebar> {
-	catagories?: ICategory[];
+interface IAppSidebarProps extends React.ComponentProps<typeof Sidebar> {
+	catagories: ICategory[];
 }
 
-export default function AppSidebar({ catagories = [], ...props }: AppSidebarProps) {
+const generalNavItems = [
+	{
+		name: 'Leaderboard',
+		href: '/leaderboard',
+		icon: <TrophyIcon className="text-yellow-400 !size-5" />,
+	},
+	{
+		name: 'Featured',
+		href: '/featured',
+		icon: <StarIcon className="text-purple-600 !size-5" />,
+	},
+	{
+		name: 'Popular',
+		href: '/popular',
+		icon: <UsersIcon className="text-blue-600 !size-5" />,
+	},
+];
+
+export function AppSidebar({ catagories, ...props }: IAppSidebarProps) {
 	return (
 		<Sidebar collapsible="icon" {...props}>
 			<SidebarHeader>
@@ -44,14 +62,16 @@ export default function AppSidebar({ catagories = [], ...props }: AppSidebarProp
 					<SidebarGroupLabel>General</SidebarGroupLabel>
 					<SidebarGroupContent>
 						<SidebarMenu>
-							<SidebarMenuItem>
-								<SidebarMenuButton asChild tooltip="Leaderboard">
-									<Link href="leaderboard">
-										<TrophyIcon className="text-yellow-400 !size-5" />
-										<span className="text-base font-semibold">Leaderboard</span>
-									</Link>
-								</SidebarMenuButton>
-							</SidebarMenuItem>
+							{generalNavItems.map((item) => (
+								<SidebarMenuItem key={item.name}>
+									<SidebarMenuButton asChild tooltip={item.name}>
+										<Link href={item.href}>
+											{item.icon}
+											<span className="text-base font-semibold">{item.name}</span>
+										</Link>
+									</SidebarMenuButton>
+								</SidebarMenuItem>
+							))}
 						</SidebarMenu>
 					</SidebarGroupContent>
 				</SidebarGroup>
@@ -61,20 +81,20 @@ export default function AppSidebar({ catagories = [], ...props }: AppSidebarProp
 					<SidebarGroupContent>
 						<SidebarMenu>
 							{catagories.map((category) => (
-								<SidebarMenuItem key={category.code}>
-									<SidebarMenuButton asChild tooltip={category.title}>
-										<Link href={`/categories/${category.code}`}>
+								<SidebarMenuItem key={category.slug}>
+									<SidebarMenuButton asChild tooltip={category.name}>
+										<Link href={`/categories/${category.slug}`}>
 											<span className="!size-4 flex items-center justify-center">
 												{category.icon}
 											</span>
 
 											<span className="ml-2 flex-1 flex items-center gap-2">
-												<span className="text-base font-semibold">{category.title}</span>
+												<span className="text-base font-semibold">{category.name}</span>
 												<Badge
 													variant="outline"
 													className="h-5 min-w-5 rounded-full px-1 font-mono tabular-nums ml-auto"
 												>
-													{category.gameCount}
+													{category.games}
 												</Badge>
 											</span>
 										</Link>

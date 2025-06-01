@@ -6,7 +6,7 @@ import { useSidebar } from '@/components/ui/sidebar';
 import { Menu, SearchIcon } from 'lucide-react';
 import Link from 'next/link';
 
-export default function Header() {
+export function Header() {
 	const { toggleSidebar } = useSidebar();
 
 	return (
